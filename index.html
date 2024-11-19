@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <title>index</title>
+    <meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="canonical" href="" />
+	<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    <div id="wrapper">
+		<style type="text/css">
+			@media(max-width: 1279px) {
+				.light-logo {
+					display: none;
+				}
+			}
+		
+			@media(min-width: 1278px) {
+				.dark-logo {
+					display: none;
+				}
+			}
+		</style>
+		<header>
+			<div class="header-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 d-flex align-items-center">
+							<div class="left-part">
+								<div class="logo light-logo">
+									<a href="#" title="">
+										<img src="assets/image/logo.png" alt="" />
+									</a>
+								</div>
+								<div class="dark-logo">
+									<a href="#" title="">
+										<img src="assets/image/logo.png" alt="" />
+									</a>
+								</div>
+							</div>
+							<div class="right-part">
+								<nav class="menu" id="menu">
+									<ul class="brand-nav brand-navbar">
+										<li><a href="javascript:void(0)" title="Home">Home</a></li>
+										<li><a href="javascript:void(0)" title="About Us">About Us</a></li>
+										<li class="is-open-a"><a href="javascript:void(0)" title="Our Product">Our Product</a>
+											<ul class="row sub-menu mega-menu">
+												<li><a href="javascript:void(0)" title="Menu">Menu</a></li>
+												<li><a href="javascript:void(0)" title="Menu">Menu</a></li>
+											</ul>
+										</li>
+										<li><a href="javascript:void(0)" title="Facilities">Facilities</a></li>
+										<li><a href="javascript:void(0)" title="Contact Us">Contact Us</a></li>
+									</ul>
+								</nav>
+								<div class="nav-overlay" onclick="closeNav()"></div>
+								<div class="menu_open_close text-right">
+									<button type="text" class="menuopen" id="menu__open" onclick="openNav()" title="Menu Open"><span></span></button>
+									<button type="text" class="menuclose" id="menu__close" onclick="closeNav()" title="Menu Close"><span></span></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+        <!-- header part end  -->
+
+
+
+        <!-- banner part start  -->
+		<div class="swiper-container home-baner">
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div class="swiper-slide"><img
+						src="assets/image/banner-smpl.png"
+						alt=""></div>
+				<div class="swiper-slide"><img
+						src="assets/image/banner-smpl.png"
+						alt=""></div>
+				<div class="swiper-slide"><img
+						src="assets/image/banner-smpl.png"
+						alt=""></div>
+			</div>
+			<!-- If we need pagination -->
+			<div class="swiper-pagination"></div>	
+			<!-- If we need navigation buttons -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		</div>
+        <!-- banner part end  -->
+
+    </div>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/jquery.min.js" rel="preload"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script>
+         const mySwiper = new Swiper('.swiper-container', {
+                // Optional parameters
+                loop: true,
+                speed: 300,
+                autoplay:true,
+				dots: false,
+                coverflowEffect: {
+                    slideShadows: true
+                },
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            })
+        
+    </script>
+	<script>
+		AOS.init();
+	</script>
+</body>
+</html>
